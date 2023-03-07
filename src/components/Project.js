@@ -16,7 +16,6 @@ function Project({ projects }) {
                             </div>
                     </div>
                 </div>
-
             ))}
         </div>
     )
