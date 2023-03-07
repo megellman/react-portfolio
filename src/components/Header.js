@@ -18,7 +18,7 @@ function Header() {
             <Router>
                 <Navigation />
                 <Routes>
-                    <Route path="/" exact element={<About />} />
+                    <Route path="/react-portfolio/" exact element={<About />} />
                     <Route path="/Portfolio" exact element={<Portfolio />} />
                     <Route path="/Contact" exact element={<Contact />} />
                     <Route path="/Resume" exact element={<Resume />} />
