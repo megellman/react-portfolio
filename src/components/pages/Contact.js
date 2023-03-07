@@ -1,26 +1,42 @@
 import React from 'react';
+import { useForm } from "react-hook-form";
+
 
 function Contact() {
+    const { register, handleSubmit, formState: { errors } } = useForm(
+       { mode: "onBlur"}
+    );
+    const onSubmit = data => console.log(data);
+    console.log(errors);
     return (
         <div>
             <h2>Contact</h2>
-            <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="name" class="form-control" id="name" aria-describedby="name" />
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" />
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <input type="message" class="form-control" id="message" />
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <div className='mb-3'>
+                    <input id='first' className='form-control' type="text" placeholder="First name" {...register("firstName", { required: true, maxLength: 20 })} />
+                    {errors.firstName && <p role="alert">Max of 20 characters</p>}
+                </div>
+
+                <div className='mb-3'>
+                    <input id='last' className='form-control' type="text" placeholder="Last Name" {...register("lastName", { required: true, maxLength: 20 })} />
+                    {errors.lastName && <p role="alert">Max of 20 characters</p>}
+                </div>
+
+
+                <div className='mb-3'>
+                    <input id='email' className='form-control' type="text" placeholder="Email" {...register("email", { 
+                        required: true,
+                        pattern: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/
+                        })} />
+                    {errors.email && <p role="alert">Invalid email</p>}
+                </div>
+                <div className='mb-3'>
+                    <textarea id='message' className='form-control' placeholder="Message" {...register("message", { required: true, maxLength: 300 })} />
+                    {errors.message && <p role="alert">This section is required</p>}
+                </div>
+                <input type="submit" />
+            </form>
         </div>
-        
     )
 }
 
