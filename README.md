@@ -19,7 +19,7 @@ This project is my professional portfolio. It contains an about me section, link
 I created this project using React, Bootstrap, and JavaScript. One motivation for creating this project was to get more experience working with React. Another was to create a portfolio that could easily be updated as I build out my projects section. 
 
 ## Table of Contents
-*[Code Example](#code-example)
+* [Code Example](#code-example)
 * [Usage](#usage)
 * [Author Info](#author-info)
 * [Credits](#credits)
