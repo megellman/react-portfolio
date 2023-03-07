@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.60a7cae8.css",
+    "main.js": "/react-portfolio/static/js/main.f72d7e7d.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/code-quiz.png": "/react-portfolio/static/media/code-quiz.7aaa88510502ccb3a2d4.png",
+    "static/media/bullet-journal.png": "/react-portfolio/static/media/bullet-journal.2461b54d682e745cc69f.png",
+    "static/media/headshot.png": "/react-portfolio/static/media/headshot.52f44a1c3d1507d9d3e7.png",
+    "static/media/team-profile-generator.png": "/react-portfolio/static/media/team-profile-generator.a51ed9b9e3de97287769.png",
+    "static/media/work-day-scheduler.png": "/react-portfolio/static/media/work-day-scheduler.64eea405343258f311b1.png",
+    "static/media/resume.pdf": "/react-portfolio/static/media/resume.61d07bf9ae865c94b7c8.pdf",
+    "static/media/nibble-nabble.png": "/react-portfolio/static/media/nibble-nabble.aa8e273251f106b0a952.png",
+    "static/media/jate.png": "/react-portfolio/static/media/jate.73bf3b195cad221d46b6.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.60a7cae8.css.map": "/react-portfolio/static/css/main.60a7cae8.css.map",
+    "main.f72d7e7d.js.map": "/react-portfolio/static/js/main.f72d7e7d.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60a7cae8.css",
+    "static/js/main.f72d7e7d.js"
+  ]
+}
