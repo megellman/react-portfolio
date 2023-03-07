@@ -7,7 +7,6 @@ import '../custom.css'
 
 function Navigation() {
     const [currentPage, setPage] = useState('About');
-console.log(currentPage);
     return (
         <div className='col-6 '>
         <ul className="nav justify-content-end">
