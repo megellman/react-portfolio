@@ -11,7 +11,7 @@ function Navigation() {
         <div className='col-6'>
         <ul className="nav justify-content-end">
             <li  className={currentPage === 'About' ? 'nav-item p-2 active' : 'nav-item p-2 none'}>
-                <NavLink style={{'textDecoration': 'none'}} to="/">About Me</NavLink>
+                <NavLink style={{'textDecoration': 'none'}} to="/react-portfolio/">About Me</NavLink>
             </li>
             <li  className={currentPage === 'Portfolio' ? 'nav-item p-2 active' : 'nav-item p-2 none' }>
                 <NavLink style={{'textDecoration': 'none'}} to="/Portfolio"  >Portfolio</NavLink>
