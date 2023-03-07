@@ -2,7 +2,9 @@ import React from 'react';
 
 function Contact() {
     return (
-        <form>
+        <div>
+            <h2>Contact</h2>
+            <form>
             <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
                 <input type="name" class="form-control" id="name" aria-describedby="name" />
@@ -17,6 +19,8 @@ function Contact() {
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        </div>
+        
     )
 }
 

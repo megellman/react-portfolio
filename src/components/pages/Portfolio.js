@@ -1,13 +1,13 @@
 import React from 'react';
 import Project from '../Project'
-const portfolios = [
+const projects = [
     {
         id: 1,
         name: 'Bullet Journal',
         description: 'Full Stack',
         deployedLink: 'https://bullet-journal.herokuapp.com/',
         repoLink: 'https://github.com/megellman/bullet-journal',
-        image: '../../assets/bullet-journal',
+        image: require('../../assets/bullet-journal.png'),
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const portfolios = [
         description: 'Full Stack',
         deployedLink: 'https://megellman.github.io/code-quiz/',
         repoLink: 'https://github.com/megellman/code-quiz',
-        image: '../../assets/code-quiz',
+        image: require('../../assets/code-quiz.png'),
     },
     {
         id: 3,
@@ -23,7 +23,7 @@ const portfolios = [
         description: "Front End",
         deployedLink: 'https://megellman.github.io/group-project/',
         repoLink: 'https://github.com/megellman/group-project',
-        image: '../../assets/nibble-nabble',
+        image: require('../../assets/nibble-nabble.png'),
     },
     {
         id: 4,
@@ -31,14 +31,14 @@ const portfolios = [
         description: 'Full Stack',
         deployedLink: 'https://just-a-text-editor1.herokuapp.com/',
         repoLink: 'https://github.com/megellman/text-editor',
-        image: '../../assets/jate',
+        image: require('../../assets/jate.png'),
     },
     {
         id: 5,
         name: 'Team Profile Generator',
         description: 'Back End',
         repoLink: 'https://github.com/megellman/team-profile-generator',
-        image: '../../assets/team-profile-generator',
+        image: require('../../assets/team-profile-generator.png'),
     },
     {
         id: 6,
@@ -46,12 +46,15 @@ const portfolios = [
         description: 'Front End',
         deployedLink: 'https://megellman.github.io/work-day-scheduler/',
         repoLink: 'https://github.com/megellman/work-day-scheduler',
-        image: '../../assets/work-day-scheduler',
+        image: require('../../assets/work-day-scheduler.png'),
     }
   ]
 function Portfolio() {
     return (
-        <Project portfolio={portfolios} />
+        <div className='container'>
+            <h2>Portfolio</h2>
+            <Project projects={projects} />
+        </div>
     )
 }
 

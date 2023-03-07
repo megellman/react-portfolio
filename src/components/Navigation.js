@@ -1,27 +1,29 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
+import '../custom.css'
 
 
-function Navigation({ currentPage, pageChange }) {
+
+function Navigation() {
 
     return (
+        <div className='col-6'>
         <ul className="nav justify-content-end">
-            <li className="nav-item">
-                <a href="/" 
-                onClick={() => pageChange('About Me')}
-                className={currentPage === 'About Me' ? 'nav-link disabled text-primary' : 'nav-link text-secondary'} 
-                >About Me
-                </a>
+            <li className='nav-item p-2'>
+                <NavLink to="/" activeClassName="active" className="none">About Me</NavLink>
             </li>
-            <li className="nav-item">
-                <a className={currentPage === 'Contact' ? 'nav-link disabled text-primary' : 'nav-link text-secondary'} href="/contact" onClick={() => pageChange('Contact')}>Contact</a>
+            <li className='nav-item p-2'>
+                <NavLink to="/Portfolio"  activeClassName="active" className="none" >Portfolio</NavLink>
             </li>
-            <li className="nav-item">
-                <a className={currentPage === 'Portfolio' ? 'nav-link disabled text-primary' : 'nav-link text-secondary'} href="/portfolio" onClick={() => pageChange('Portfolio')}>Portfolio</a>
+            <li className="nav-item p-2">
+                <NavLink to="/Contact"  activeClassName="active" className="none" >Contact</NavLink>
             </li>
-            <li className="nav-item">
-                <a className={currentPage === 'Resume' ? 'nav-link disabled text-primary' : 'nav-link text-secondary'} href='/resume' onClick={() => pageChange('Resume')}>Resume</a>
+            <li className='nav-item p-2'>
+                <NavLink to="/Resume"  activeClassName="active" className="none" >Resume</NavLink>
             </li>
-        </ul>
+        </ul>    
+        </div>
+        
     )
 }
 
