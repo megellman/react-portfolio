@@ -1,25 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 import '../custom.css'
 
 
 
 function Navigation() {
+    const [currentPage] = useState('About');
 
     return (
         <div className='col-6'>
         <ul className="nav justify-content-end">
-            <li className='nav-item p-2'>
-                <NavLink to="/" className="none">About Me</NavLink>
+            <li  className={currentPage === 'About' ? 'nav-item p-2 active' : 'nav-item p-2 none'}>
+                <NavLink style={{'textDecoration': 'none'}} to="/">About Me</NavLink>
             </li>
-            <li className='nav-item p-2'>
-                <NavLink to="/Portfolio"  className="none" >Portfolio</NavLink>
+            <li  className={currentPage === 'Portfolio' ? 'nav-item p-2 active' : 'nav-item p-2 none' }>
+                <NavLink style={{'textDecoration': 'none'}} to="/Portfolio"  >Portfolio</NavLink>
             </li>
-            <li className="nav-item p-2">
-                <NavLink to="/Contact"  className="none" >Contact</NavLink>
+            <li className={currentPage === 'Contact' ? 'nav-item p-2 active' : 'nav-item p-2 none' }>
+                <NavLink style={{'textDecoration': 'none'}} to="/Contact"  >Contact</NavLink>
             </li>
-            <li className='nav-item p-2'>
-                <NavLink to="/Resume"  className="none" >Resume</NavLink>
+            <li  className={currentPage === 'Resume' ? 'nav-item p-2 active' : 'nav-item p-2 none' }>
+                <NavLink style={{'textDecoration': 'none'}} to="/Resume"  >Resume</NavLink>
             </li>
         </ul>    
         </div>

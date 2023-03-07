@@ -1,8 +1,9 @@
 .active{
-    color:rgb(17, 195, 255)
+    color:rgb(17, 195, 255);
+    text-decoration: none;
 }
 
 .none{
     text-decoration: none;
-    color: black;
+    color: black !important;
 }

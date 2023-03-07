@@ -12,7 +12,7 @@ const projects = [
     {
         id: 2,
         name: 'Code Quiz',
-        description: 'Full Stack',
+        description: 'Front End',
         deployedLink: 'https://megellman.github.io/code-quiz/',
         repoLink: 'https://github.com/megellman/code-quiz',
         image: require('../../assets/code-quiz.png'),

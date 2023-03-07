@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# React Portfolio
+![license badge](https://img.shields.io/static/v1?label=license&message=MIT&color=blue)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technology Used 
 
-## Available Scripts
+| Technology Used         | Resource URL           | 
+| ------------- |:-------------:| 
+| React   | [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML) |      |   
+| Git | [git-scm.com](https://git-scm.com/)     |    
+| Node.js | [nodejs.org/docs](https://nodejs.org/docs/latest-v16.x/api/) |
+    
+## Description
 
-In the project directory, you can run:
+[Visit the Deployed Site](https://megellman.github.io/employee-tracker/)
+    
+This project is an employee database where a user can view departments, roles, and employees as well as update the various content. 
 
-### `npm start`
+I created this project using Node.js, Inquirer, and MySQL. When a user first runs the application, they are presented with a few different options. They can either see different information or they can change information. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+his project was my first time applying my knowledge of MySQL. Through this, I've gained a lot of experience with MySQL. Additionally, I have built upon my knowledge of
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Project Demo]( https://watch.screencastify.com/v/AxtvWVHLFjhYMW1czkQV)
 
-### `npm test`
+  ## Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        * [Installation](#installation)
+* [Usage](#usage)
+* [Author Info](#author-info)
+* [Credits](#credits)
+* [License](#license)
 
-### `npm run build`
+## Code Example
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Here I used async and await to update the employee information. The inquirer prompt will not run until the getEmployees function has run.  The response.filter will not run until the inquirer prompt is finished and so on. This makes working with inquirer and ansynchronous functions easy because they will not run without their necssary information.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
+    
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    
+## Usage
+  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Author Info
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Megan Ellman
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[LinkedIn](https://www.linkedin.com/in/megan-ellman/)
 
-### Code Splitting
+[GitHub](https://github.com/megellman)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[Portfolio](https://megellman.github.io/portfolio/)
+    
+## Credits
+    
 
-### Analyzing the Bundle Size
+    
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    
+## License
+  
+  This project is covered under the MIT license. For more information please click [here](https://choosealicense.com/)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Questions
+
+[GitHub](github.com/megellman)
+
+If you have any additional questions, you can reach me at meganlellman@gmail.com
