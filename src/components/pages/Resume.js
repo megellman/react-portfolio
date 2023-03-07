@@ -26,7 +26,8 @@ function Resume() {
                 {backEnd.map(item => (
                     <li>{item}</li>
                 ))}
-            </ul>   
+            </ul> 
+              
             </div>
             </div>
         </div>
