@@ -2,10 +2,10 @@ import React from 'react';
 
 function Project({ projects }) {
     return (
-        <div className='row row-cols-1 row-cols-md-2 g-4'>
+        <div className='row row-cols-1 row-cols-lg-2 g-5 '>
             {projects.map(item => (
                 <div className="col">
-                    <div className="card" style={{ width: '30rem' }} key={item.id}>
+                    <div className="card border border-dark border-2" style={{ width: '30rem' }} key={item.id}>
                         <a href={item.deployedLink} >
                             <img src={item.image} style={{ width: '30rem', height: '15rem' }} className="card-img-top img-fluid" alt="..." />
                         </a>

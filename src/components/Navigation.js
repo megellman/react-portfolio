@@ -8,7 +8,7 @@ function Navigation() {
     const [currentPage] = useState('About');
 
     return (
-        <div className='col-6'>
+        <div className='col-6 '>
         <ul className="nav justify-content-end">
             <li  className={currentPage === 'About' ? 'nav-item p-2 active' : 'nav-item p-2 none'}>
                 <NavLink style={{'textDecoration': 'none'}} to="/react-portfolio/">About Me</NavLink>
