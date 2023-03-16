@@ -6,7 +6,7 @@ function Project({ projects }) {
             {projects.map(item => (
                 <div className="col">
                     <div className="card border border-dark border-2" style={{ width: '30rem' }} key={item.id}>
-                        <a href={item.deployedLink} >
+                        <a href={item.deployedLink} > Deployed Link
                             <img src={item.image} style={{ width: '30rem', height: '15rem' }} className="card-img-top img-fluid" alt="..." />
                         </a>
                             <div className="card-body">

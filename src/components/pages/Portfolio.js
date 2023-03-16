@@ -47,6 +47,14 @@ const projects = [
         deployedLink: 'https://megellman.github.io/work-day-scheduler/',
         repoLink: 'https://github.com/megellman/work-day-scheduler',
         image: require('../../assets/work-day-scheduler.png'),
+    },
+    {
+        id: 2,
+        name: 'Support Hero',
+        description: 'Full Stack',
+        deployedLink: 'https://dry-fjord-88699.herokuapp.com/',
+        repoLink: 'https://github.com/rmoscoe/support-hero',
+        image: require('../../assets/support-hero.png'),
     }
   ]
 function Portfolio() {
