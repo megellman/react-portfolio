@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from "react-router-dom";
 import '../custom.css'
 
 
 
 function Navigation() {
-    const [setPage] = useState('About');
     return (
         <div className='col-6 '>
         <ul className="nav justify-content-end">
-            <li onClick={() => setPage('About')} >
+            <li>
                 <NavLink 
                 style={({ isActive }) => {
                     return {
@@ -24,7 +23,7 @@ function Navigation() {
                     About Me
                 </NavLink>
             </li>
-            <li onClick={() => setPage('Portfolio')} >
+            <li>
                 <NavLink 
                 style={({ isActive }) => {
                     return {
@@ -36,7 +35,7 @@ function Navigation() {
                 }}
                 to="/portfolio">Portfolio</NavLink>
             </li>
-            <li onClick={() => setPage('Contact')} >
+            <li>
                 <NavLink 
                 style={({ isActive }) => {
                     return {
@@ -48,7 +47,7 @@ function Navigation() {
                 }}
                 to="/contact">Contact</NavLink>
             </li>
-            <li onClick={() => setPage('Resume')} >
+            <li>
                 <NavLink 
                 style={({ isActive }) => {
                     return {
