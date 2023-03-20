@@ -16,7 +16,7 @@ function App() {
         <Footer />
       </div>
     <Routes>
-        <Route path="/" exact element={<About />} />
+        <Route path="/react-portfolio" exact element={<About />} />
         <Route path="/portfolio" exact element={<Portfolio />} />
         <Route path="/contact" exact element={<Contact />} />
         <Route path="/resume" exact element={<Resume />} />
