@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.161d67d6.css",
-    "main.js": "/react-portfolio/static/js/main.60fe3db2.js",
-    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/code-quiz.png": "/react-portfolio/static/media/code-quiz.7aaa88510502ccb3a2d4.png",
-    "static/media/bullet-journal.png": "/react-portfolio/static/media/bullet-journal.2461b54d682e745cc69f.png",
-    "static/media/headshot.png": "/react-portfolio/static/media/headshot.52f44a1c3d1507d9d3e7.png",
-    "static/media/team-profile-generator.png": "/react-portfolio/static/media/team-profile-generator.a51ed9b9e3de97287769.png",
-    "static/media/work-day-scheduler.png": "/react-portfolio/static/media/work-day-scheduler.64eea405343258f311b1.png",
-    "static/media/resume.pdf": "/react-portfolio/static/media/resume.61d07bf9ae865c94b7c8.pdf",
-    "static/media/nibble-nabble.png": "/react-portfolio/static/media/nibble-nabble.aa8e273251f106b0a952.png",
-    "static/media/jate.png": "/react-portfolio/static/media/jate.73bf3b195cad221d46b6.png",
-    "index.html": "/react-portfolio/index.html",
-    "main.161d67d6.css.map": "/react-portfolio/static/css/main.161d67d6.css.map",
-    "main.60fe3db2.js.map": "/react-portfolio/static/js/main.60fe3db2.js.map",
-    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.css": "/static/css/main.161d67d6.css",
+    "main.js": "/static/js/main.d0c62ca0.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/code-quiz.png": "/static/media/code-quiz.7aaa88510502ccb3a2d4.png",
+    "static/media/support-hero.png": "/static/media/support-hero.b33a80035463e4b1cb03.png",
+    "static/media/bullet-journal.png": "/static/media/bullet-journal.2461b54d682e745cc69f.png",
+    "static/media/headshot.png": "/static/media/headshot.52f44a1c3d1507d9d3e7.png",
+    "static/media/team-profile-generator.png": "/static/media/team-profile-generator.a51ed9b9e3de97287769.png",
+    "static/media/work-day-scheduler.png": "/static/media/work-day-scheduler.64eea405343258f311b1.png",
+    "static/media/resume.pdf": "/static/media/resume.a615b2d05547d839169c.pdf",
+    "static/media/nibble-nabble.png": "/static/media/nibble-nabble.aa8e273251f106b0a952.png",
+    "static/media/jate.png": "/static/media/jate.73bf3b195cad221d46b6.png",
+    "index.html": "/index.html",
+    "main.161d67d6.css.map": "/static/css/main.161d67d6.css.map",
+    "main.d0c62ca0.js.map": "/static/js/main.d0c62ca0.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.161d67d6.css",
-    "static/js/main.60fe3db2.js"
+    "static/js/main.d0c62ca0.js"
   ]
 }
