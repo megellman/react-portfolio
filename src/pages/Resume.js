@@ -7,7 +7,7 @@ function Resume() {
     return (
         <div>
             <h2>Resume</h2>
-            <a href={ require('../../assets/resume.pdf')} download='MeganEllman'>
+            <a href={ require('../assets/resume.pdf')} download='MeganEllman'>
                 Download Resume
             </a>
             <h3>Proficencies</h3>

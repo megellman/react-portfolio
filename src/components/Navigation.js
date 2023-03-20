@@ -5,21 +5,60 @@ import '../custom.css'
 
 
 function Navigation() {
-    const [currentPage, setPage] = useState('About');
+    const [setPage] = useState('About');
     return (
         <div className='col-6 '>
         <ul className="nav justify-content-end">
             <li onClick={() => setPage('About')} >
-                <NavLink className={currentPage === 'About' ? 'nav-item p-2 active' : 'nav-item p-2 none'}to="/react-portfolio/">About Me</NavLink>
+                <NavLink 
+                style={({ isActive }) => {
+                    return {
+                        fontWeight: isActive ? "bold" : "",
+                        color: isActive ? "darkorchid" : "black",
+                        textDecorationLine: "none",
+                        marginRight: "10px"
+                    }
+                }}
+                to="/"
+                end>
+                    About Me
+                </NavLink>
             </li>
             <li onClick={() => setPage('Portfolio')} >
-                <NavLink className={currentPage === 'Portfolio' ? 'nav-item p-2 active' : 'nav-item p-2 none' } to="/Portfolio"  >Portfolio</NavLink>
+                <NavLink 
+                style={({ isActive }) => {
+                    return {
+                        fontWeight: isActive ? "bold" : "",
+                        color: isActive ? "darkorchid" : "black",
+                        textDecorationLine: "none",
+                        marginRight: "10px"
+                    }
+                }}
+                to="/portfolio">Portfolio</NavLink>
             </li>
             <li onClick={() => setPage('Contact')} >
-                <NavLink className={currentPage === 'Contact' ? 'nav-item p-2 active' : 'nav-item p-2 none' } to="/Contact"  >Contact</NavLink>
+                <NavLink 
+                style={({ isActive }) => {
+                    return {
+                        fontWeight: isActive ? "bold" : "",
+                        color: isActive ? "darkorchid" : "black",
+                        textDecorationLine: "none",
+                        marginRight: "10px"
+                    }
+                }}
+                to="/contact">Contact</NavLink>
             </li>
             <li onClick={() => setPage('Resume')} >
-                <NavLink className={currentPage === 'Resume' ? 'nav-item p-2 active' : 'nav-item p-2 none' } to="/Resume"  >Resume</NavLink>
+                <NavLink 
+                style={({ isActive }) => {
+                    return {
+                        fontWeight: isActive ? "bold" : "",
+                        color: isActive ? "darkorchid" : "black",
+                        textDecorationLine: "none",
+                        marginRight: "10px"
+                    }
+                }}
+                to="/resume">Resume</NavLink>
             </li>
         </ul>    
         </div>

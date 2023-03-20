@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from '../Project'
+import Project from '../components/Project'
 const projects = [
     {
         id: 1,
@@ -7,7 +7,7 @@ const projects = [
         description: 'Full Stack',
         deployedLink: 'https://bullet-journal.herokuapp.com/',
         repoLink: 'https://github.com/megellman/bullet-journal',
-        image: require('../../assets/bullet-journal.png'),
+        image: require('../assets/bullet-journal.png'),
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const projects = [
         description: 'Front End',
         deployedLink: 'https://megellman.github.io/code-quiz/',
         repoLink: 'https://github.com/megellman/code-quiz',
-        image: require('../../assets/code-quiz.png'),
+        image: require('../assets/code-quiz.png'),
     },
     {
         id: 3,
@@ -23,7 +23,7 @@ const projects = [
         description: "Front End",
         deployedLink: 'https://megellman.github.io/group-project/',
         repoLink: 'https://github.com/megellman/group-project',
-        image: require('../../assets/nibble-nabble.png'),
+        image: require('../assets/nibble-nabble.png'),
     },
     {
         id: 4,
@@ -31,14 +31,14 @@ const projects = [
         description: 'Full Stack',
         deployedLink: 'https://just-a-text-editor1.herokuapp.com/',
         repoLink: 'https://github.com/megellman/text-editor',
-        image: require('../../assets/jate.png'),
+        image: require('../assets/jate.png'),
     },
     {
         id: 5,
         name: 'Team Profile Generator',
         description: 'Back End',
         repoLink: 'https://github.com/megellman/team-profile-generator',
-        image: require('../../assets/team-profile-generator.png'),
+        image: require('../assets/team-profile-generator.png'),
     },
     {
         id: 6,
@@ -46,7 +46,7 @@ const projects = [
         description: 'Front End',
         deployedLink: 'https://megellman.github.io/work-day-scheduler/',
         repoLink: 'https://github.com/megellman/work-day-scheduler',
-        image: require('../../assets/work-day-scheduler.png'),
+        image: require('../assets/work-day-scheduler.png'),
     },
     {
         id: 2,
@@ -54,7 +54,7 @@ const projects = [
         description: 'Full Stack',
         deployedLink: 'https://dry-fjord-88699.herokuapp.com/',
         repoLink: 'https://github.com/rmoscoe/support-hero',
-        image: require('../../assets/support-hero.png'),
+        image: require('../assets/support-hero.png'),
     }
   ]
 function Portfolio() {
