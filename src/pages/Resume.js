@@ -15,16 +15,16 @@ function Resume() {
             <div className='col-6'>
              <h4>Front-end</h4>
             <ul>
-                {frontEnd.map(item => (
-                    <li>{item}</li>
+                {frontEnd.map((item, i) => (
+                    <li key={i}>{item}</li>
                 ))}
             </ul>
             </div>
             <div className='col-6'>
             <h4>Back-end</h4>
             <ul>
-                {backEnd.map(item => (
-                    <li>{item}</li>
+                {backEnd.map((item, i) => (
+                    <li key={i}>{item}</li>
                 ))}
             </ul> 
               

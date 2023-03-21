@@ -1,9 +1,8 @@
-.active{
-    color:rgb(157, 0, 86);
-    text-decoration: none;
-}
 
-.none{
-    text-decoration: none;
-    color: black !important;
+.project-link:hover {
+    font-weight: bold;
+  }
+
+.footer {
+    margin-top: 100px;
 }

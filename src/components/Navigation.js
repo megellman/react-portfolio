@@ -18,7 +18,7 @@ function Navigation() {
                         marginRight: "10px"
                     }
                 }}
-                to="/react-portfolio"
+                to="/"
                 end>
                     About Me
                 </NavLink>

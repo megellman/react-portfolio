@@ -7,6 +7,7 @@ function Contact() {
        { mode: "onBlur"}
     );
     const onSubmit = data => console.log(data);
+    
     console.log(errors);
     return (
         <div>
@@ -14,12 +15,12 @@ function Contact() {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='mb-3'>
                     <input id='first' className='form-control' type="text" placeholder="First name" {...register("firstName", { required: true, maxLength: 20 })} />
-                    {errors.firstName && <p role="alert">Max of 20 characters</p>}
+                    {errors.firstName && <p role="alert">This section is required</p>}
                 </div>
 
                 <div className='mb-3'>
                     <input id='last' className='form-control' type="text" placeholder="Last Name" {...register("lastName", { required: true, maxLength: 20 })} />
-                    {errors.lastName && <p role="alert">Max of 20 characters</p>}
+                    {errors.lastName && <p role="alert">This section is required</p>}
                 </div>
 
 
