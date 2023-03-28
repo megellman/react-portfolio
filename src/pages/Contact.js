@@ -1,12 +1,27 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-
+import emailjs from '@emailjs/browser';
 
 function Contact() {
     const { register, handleSubmit, formState: { errors } } = useForm(
        { mode: "onBlur"}
     );
-    const onSubmit = data => console.log(data);
+    const onSubmit = async data => {
+    const templateParams = {
+        name: `${data.firstName} ${data.lastName}`,
+        message: data.message,
+        email: data.email
+    };
+
+    await emailjs.send('service_90tn49n','template_2fyjduof', templateParams, 'uWyRr0laLf8YstsY_')
+	.then((response) => {
+	   console.log('SUCCESS!', response.status, response.text);
+	}, (err) => {
+	   console.log('FAILED...', err);
+	});    
+    };
+
+    
     
     console.log(errors);
     return (

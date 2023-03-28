@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from './Navigation';
 
 function Header() {
+    console.log(Date(1676948737748).toLocaleString("en-us"));
     return (
         <div className='container'>
             <div className='row'>

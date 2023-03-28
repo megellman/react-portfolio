@@ -4,7 +4,7 @@ const projects = [
     {
         id: 1,
         name: 'Bullet Journal',
-        description: 'Full Stack',
+        description: 'HTML | CSS | JavaScript | Node.js | MySQL | Sequelize | Express | Express-Handlebars | Express-Session',
         deployedLink: 'https://bullet-journal.herokuapp.com/',
         repoLink: 'https://github.com/megellman/bullet-journal',
         image: require('../assets/bullet-journal.png'),
@@ -12,7 +12,7 @@ const projects = [
     {
         id: 2,
         name: 'Code Quiz',
-        description: 'Front End',
+        description: 'HTML | CSS | Git | jQuery',
         deployedLink: 'https://megellman.github.io/code-quiz/',
         repoLink: 'https://github.com/megellman/code-quiz',
         image: require('../assets/code-quiz.png'),
@@ -20,7 +20,7 @@ const projects = [
     {
         id: 3,
         name: 'Nibble Nabble',
-        description: "Front End",
+        description: "HTML | CSS | Git | jQuery | Tailwind",
         deployedLink: 'https://megellman.github.io/group-project/',
         repoLink: 'https://github.com/megellman/group-project',
         image: require('../assets/nibble-nabble.png'),
