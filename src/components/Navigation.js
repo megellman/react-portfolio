@@ -6,7 +6,7 @@ import '../custom.css'
 
 function Navigation() {
     return (
-        <div className='col-6 '>
+        <div >
         <ul className="nav justify-content-end">
             <li>
                 <NavLink 
