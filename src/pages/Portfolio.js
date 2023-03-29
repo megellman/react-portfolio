@@ -60,7 +60,7 @@ const projects = [
 function Portfolio() {
     return (
         <div className='container'>
-            <h2>Portfolio</h2>
+            <h2 style={{marginLeft: 'auto', marginRight: 'auto', fontWeight: 'bold'}}>Portfolio</h2>
             <Project projects={projects} />
         </div>
     )

@@ -6,7 +6,7 @@ const backEnd = ['APIs', 'Node', 'Express', 'MySQL', 'Sequelize', 'MongoDB', 'Mo
 function Resume() {
     return (
         <div>
-            <h2>Resume</h2>
+            <h2 style={{margin: '20px auto 40px 20px', fontWeight: 'bold'}}>Resume</h2>
             <a href={require('../assets/resume.pdf')} download='MeganEllman'
                 style={{ color: "darkorchid", textDecoration: "none" }}
                 onMouseOver={(e) => e.target.style.fontWeight = "bold"}

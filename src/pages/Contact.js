@@ -26,7 +26,7 @@ function Contact() {
     console.log(errors);
     return (
         <div>
-            <h2>Contact</h2>
+            <h2 style={{margin: '20px auto 40px 20px', fontWeight: 'bold'}}>Contact</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='mb-3'>
                     <input id='first' className='form-control' type="text" placeholder="First name" {...register("firstName", { required: true, maxLength: 20 })} />
