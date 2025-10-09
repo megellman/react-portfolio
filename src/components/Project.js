@@ -27,7 +27,7 @@ function Project({ projects }) {
                                 target="_blank">GitHub Repo</NavLink>
                             <NavLink
                             className={"project-link"}
-                                to={item.repoLink}
+                                to={item.deployedLink}
                                 style={({ isPending }) => {
                                     return {
                                         fontWeight: isPending ? "bold" : "",
