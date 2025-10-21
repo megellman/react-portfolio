@@ -10,20 +10,21 @@ import Resume from './pages/Resume';
 
 function App() {
   return (
-    <BrowserRouter 
-    basename='/react-portfolio'
-    forceRefresh={true}>
-      <div>
+    <BrowserRouter basename="/react-portfolio">
+      <div className="app-container">
         <Header />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </div>
         <Footer />
       </div>
-    <Routes>
-        <Route path="/" exact element={<About />} />
-        <Route path="/portfolio" exact element={<Portfolio />} />
-        <Route path="/contact" exact element={<Contact />} />
-        <Route path="/resume" exact element={<Resume />} />
-    </Routes>  
     </BrowserRouter>
   );
 }
+
 export default App;
