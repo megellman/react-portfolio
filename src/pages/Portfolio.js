@@ -26,20 +26,13 @@ const projects = [
     },
     {
         id: 4,
-        name: 'Text Editor',
-        description: 'Full Stack',
-        repoLink: 'https://github.com/megellman/text-editor',
-        image: require('../assets/jate.png'),
-    },
-    {
-        id: 5,
         name: 'Team Profile Generator',
         description: 'Back End',
         repoLink: 'https://github.com/megellman/team-profile-generator',
         image: require('../assets/team-profile-generator.png'),
     },
     {
-        id: 6,
+        id: 5,
         name: 'Support Hero',
         description: 'Full Stack',
         deployedLink: 'https://dry-fjord-88699.herokuapp.com/login',
@@ -47,20 +40,20 @@ const projects = [
         image: require('../assets/support-hero.png')
     },
     {
-        id: 7,
+        id: 6,
         name: 'Task Manager',
         description: 'Full Stack',
         deployedLink: 'https://task-mananger-7vkh.onrender.com/',
         repoLink: 'https://github.com/megellman/task-mananger',
         image: require('../assets/task-manager.png'),
     },
-    
-  ]
+
+]
 function Portfolio() {
     return (
-        <div className='container'>
-            <h2 style={{marginLeft: 'auto', marginRight: 'auto', fontWeight: 'bold'}}>Portfolio</h2>
-            <Project projects={projects} />
+        <div className='container' style={{ paddingTop: "150px", paddingBottom: "200px" }}>
+            <h2 style={{ textAlign: 'center', paddingBottom: "50px" }}>My Work</h2>
+            <Project projects={projects} />   
         </div>
     )
 }

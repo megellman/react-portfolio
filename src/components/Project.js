@@ -1,32 +1,44 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import { useHover } from '@uidotdev/usehooks';
 
-function Project({ projects }) {
+function ProjectCard({ item }) {
+    const [ref, hovering] = useHover();
+
     return (
-        <div className='row row-cols-1 row-cols-lg-2 g-5'>
-            {projects.map((item, i) => (
-                <div key={i} className="col">
-                    <div className="card border border-dark border-2" style={{ width: '30rem' }} >
-                        <a href={item.deployedLink} >
-                            <img src={item.image} style={{ width: '30rem', height: '15rem' }} className="card-img-top img-fluid" alt="..." />
-                        </a>
-                        <div className="card-body">
-                            <h5 className="card-title">{item.name}</h5>
-                            <p className="card-text">{item.description}</p>
-                            <NavLink
-                                className={"hover-link project-link"}
-                                to={item.repoLink}
-                                target="_blank">GitHub Repo</NavLink>
-                            {item.deployedLink ? <NavLink
-                                className={"hover-link project-link"}
-                                to={item.deployedLink}
-                                target="_blank">Deployed Application</NavLink> : null}
-                        </div>
+            <div ref={ref} className="card  border-0" style={{ width: '300px', height: '200px', overflow: "hidden" }}>
+                {hovering ? (
+                    <div className="card-body">
+                        <h5 className="card-title">{item.name}</h5>
+                        <p className="card-text">{item.description}</p>
+                        <NavLink className="hover-link project-link" to={item.repoLink} target="_blank">
+                            GitHub Repo
+                        </NavLink>
+                        { item.deployedLink && (
+                            <NavLink className="hover-link project-link" to={item.deployedLink} target="_blank">
+                                Deployed Application
+                            </NavLink> )}
                     </div>
-                </div>
-            ))}
-        </div>
-    )
+                ) : (
+                    <a href={item.deployedLink}>
+                        <img
+                            src={item.image}
+                            style={{ objectFit: "cover", height: "200px"}}
+                            className="card-img-top img-fluid"
+                            alt="..."
+                        />
+                    </a>
+                )}
+            </div>
+    );
 }
 
-export default Project;
+export default function Project({ projects }) {
+    return (
+        <div className="d-flex flex-wrap justify-content-center" style={{ gap: "20px" }}>
+            {projects.map((item, i) => (
+                <ProjectCard key={i} item={item} />
+            ))}
+        </div>
+    );
+}
