@@ -3,7 +3,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div className='footer navbar justify-content-center'>
+        <div className='footer fixed-bottom navbar justify-content-center'>
             <ul className="nav ">
                 <li className="nav-item hover-link">
                     <a className="nav-link  text-secondary" target='_blank' href="https://www.linkedin.com/in/megan-ellman/" >LinkedIn</a>
