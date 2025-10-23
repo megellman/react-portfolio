@@ -1,4 +1,5 @@
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
 
 $theme-colors:(
   "primary": rgb(130, 147, 206)

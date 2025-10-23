@@ -66,7 +66,7 @@ function Portfolio() {
         <div className='container' style={{ paddingTop: "150px", paddingBottom: "200px" }}>
             <h2 style={{ textAlign: 'center', paddingBottom: "50px" }}>My Work</h2>
             <Project projects={projects} />  
-            <a className='btn btn-lg btn-light btn-block mt-5' href='https://github.com/megellman' target='_blank' style={{width:"100%", borderColor:"var(--main)"}} rel="noreferrer" >See more of my work</a> 
+            <a className='btn btn-lg btn-outline-primary btn-block mt-5' href='https://github.com/megellman' target='_blank' style={{width:"100%"}} rel="noreferrer" >See more of my work</a> 
         </div>
     )
 }
