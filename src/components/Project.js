@@ -6,30 +6,19 @@ function ProjectCard({ item }) {
     const [ref, hovering] = useHover();
 
     return (
-            <div ref={ref} className="card  border-0" style={{ width: '300px', height: '200px', overflow: "hidden" }}>
+        <NavLink className={"hover-link project-link"} to={item.deployedLink ? item.deployedLink : item.repoLink} target='_blank'>
+            <div ref={ref} className="card  border-0" style={{ width: '300px', height: '200px', overflow: "hidden", color: "white" }}>
                 {hovering ? (
-                    <div className="card-body">
-                        <h5 className="card-title">{item.name}</h5>
+                    <div className="card-body d-flex justify-content-center align-items-center" style={{backgroundColor: item.color}}>
                         <p className="card-text">{item.description}</p>
-                        <NavLink className="hover-link project-link" to={item.repoLink} target="_blank">
-                            GitHub Repo
-                        </NavLink>
-                        { item.deployedLink && (
-                            <NavLink className="hover-link project-link" to={item.deployedLink} target="_blank">
-                                Deployed Application
-                            </NavLink> )}
                     </div>
                 ) : (
-                    <a href={item.deployedLink}>
-                        <img
-                            src={item.image}
-                            style={{ objectFit: "cover", height: "200px"}}
-                            className="card-img-top img-fluid"
-                            alt="..."
-                        />
-                    </a>
+                    <div className='card-body d-flex justify-content-center align-items-center' style={{ backgroundColor: item.colorTransparent }}>
+                        <h3 style={{textAlign:"center"}}>{item.name}</h3>
+                    </div>
                 )}
             </div>
+        </NavLink>
     );
 }
 
