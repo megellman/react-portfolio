@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './Main';
 import Contact from './pages/Contact';
+import ScrollTop from './components/ScrollTop';
 
 
 
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter
       basename='/react-portfolio'
       forceRefresh={true}>
+      <ScrollTop />
       <div>
         <Header />
         <Routes>

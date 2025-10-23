@@ -44,7 +44,7 @@ function Contact() {
   };
 
   return (
-    <div style={{ maxWidth: "500px", margin: "100px auto 0 auto", padding: "20px" }}>
+    <div style={{ maxWidth: "500px", margin: "100px auto", padding: "20px" }}>
       <h2>Let’s Connect</h2>
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: "15px" }}>

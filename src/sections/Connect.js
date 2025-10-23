@@ -7,7 +7,7 @@ export default function Connect() {
                 <h1>Let’s Talk</h1>
                 <p>Whether it’s a project, opportunity, or idea — I’m just a message away</p>
             </div>
-            <Link to="/Contact" className="align-self-center btn btn-lg text-white contact">
+            <Link to="/Contact" className="align-self-center btn btn-lg text-white contact" style={{scrollMarginTop:"500px"}}>
                Say Hi
             </Link>
         </div>
