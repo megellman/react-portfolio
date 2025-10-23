@@ -16,10 +16,12 @@ function App() {
       <ScrollTop />
       <div>
         <Header />
-        <Routes>
-          <Route path="/" exact element={<Main />} />
-          <Route path="/Contact" exact element={<Contact />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" exact element={<Main />} />
+            <Route path="/Contact" exact element={<Contact />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
 

@@ -44,8 +44,7 @@ function Contact() {
   };
 
   return (
-    <div className="bg-white" style={{ maxWidth: "500px", margin: "100px auto", padding: "20px", borderRadius: "5px" }}>
-      <div >
+      <div className="bg-white" style={{ maxWidth: "500px", margin: "100px auto", padding: "20px", borderRadius: "5px" }}>
         <h2>Let’s Connect</h2>
         <form onSubmit={handleSubmit}>
           <div style={{ marginBottom: "15px" }}>
@@ -100,7 +99,6 @@ function Contact() {
           </button>
         </form>
       </div>
-    </div>
   );
 }
 
