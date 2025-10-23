@@ -63,10 +63,10 @@ const projects = [
 function Portfolio() {
     return (
             <div className='container d-flex flex-column' style={{ paddingTop: "100px" }}>
-                <h2 style={{ textAlign: 'center', paddingBottom: "50px" }}>My Work</h2>
+                <h1 className='text-dark' style={{ textAlign: 'center', paddingBottom: "50px" }}>My Work</h1>
                 <Project projects={projects} />
                 <p className='mt-3 text-center'>View all my code and contributions on <a className='text-primary' href='https://github.com/megellman' target='_blank' rel='noreferrer'>GitHub</a></p>
-            </div>
+            </div>       
     )
 }
 

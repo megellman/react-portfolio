@@ -7,7 +7,7 @@ export default function Connect() {
                 <h1>Let’s Talk</h1>
                 <p>Whether it’s a project, opportunity, or idea — I’m just a message away</p>
             </div>
-            <Link to="/Contact" className="btn btn-primary text-white btn-lg">
+            <Link to="/Contact" className="btn btn-outline-dark btn-round btn-lg">
                Say Hi
             </Link>
         </div>

@@ -2,7 +2,11 @@
 @import "bootstrap/scss/variables";
 
 $theme-colors:(
-  "primary": rgb(130, 147, 206)
+  // "primary": rgb(130, 147, 206)
+  // "primary": #179574
+  "primary": #7988D9,
+  "dark": #1A1A2E,
+  "light": #F5F6FA
 );
 
 @import "bootstrap/scss/bootstrap";
@@ -24,6 +28,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  background-color: #F5F6FA;
 }
 
 .contact{
