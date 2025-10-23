@@ -62,10 +62,10 @@ const projects = [
 ]
 function Portfolio() {
     return (
-        <div id='portfolio' className='container' style={{ scrollMarginTop:"-30px", paddingTop: "150px" }}>
+        <div id='portfolio' className='container d-flex flex-column' style={{ scrollMarginTop:"-30px", paddingTop: "100px", paddingBottom: "150px" }}>
             <h2 style={{ textAlign: 'center', paddingBottom: "50px" }}>My Work</h2>
             <Project projects={projects} />  
-            <a className='btn btn-lg btn-outline-primary btn-block mt-5' href='https://github.com/megellman' target='_blank' style={{width:"100%"}} rel="noreferrer" >See more of my work</a> 
+            <p className='mt-3 text-center'>View all my code and contributions on <a className='text-primary ' href='https://github.com/megellman' target='_blank' rel='noreferrer'>GitHub</a></p>
         </div>
     )
 }
