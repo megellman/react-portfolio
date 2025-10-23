@@ -6,13 +6,13 @@ function Footer() {
         <div className='footer  navbar justify-content-center bg-primary'>
             <ul className="nav">
                 <li className="nav-item hover-link">
-                    <a className="nav-link text-dark" target='_blank' href="https://www.linkedin.com/in/megan-ellman/" rel="noreferrer" >LinkedIn</a>
+                    <a className="nav-link text-white" target='_blank' href="https://www.linkedin.com/in/megan-ellman/" rel="noreferrer" >LinkedIn</a>
                 </li>
                 <li className="nav-item hover-link">
-                    <a className="nav-link text-dark" target='_blank' href="https://github.com/megellman" rel="noreferrer">GitHub</a>
+                    <a className="nav-link text-white" target='_blank' href="https://github.com/megellman" rel="noreferrer">GitHub</a>
                 </li>
                 <li className="nav-item hover-link">
-                    <a className="nav-link text-dark" href={require('../assets/resume.pdf')} download='MeganEllman' >Resume</a>
+                    <a className="nav-link text-white" href={require('../assets/resume.pdf')} download='MeganEllman' >Resume</a>
                 </li>
             </ul>
         </div>
