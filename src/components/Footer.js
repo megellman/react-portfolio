@@ -3,7 +3,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div className='footer  navbar justify-content-center' style={{marginTop:"100px"}}>
+        <div className='footer  navbar justify-content-center bg-primary'>
             <ul className="nav">
                 <li className="nav-item hover-link">
                     <a className="nav-link text-dark" target='_blank' href="https://www.linkedin.com/in/megan-ellman/" rel="noreferrer" >LinkedIn</a>
