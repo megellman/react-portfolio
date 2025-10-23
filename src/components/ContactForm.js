@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Contact() {
+function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,7 +17,7 @@ function Contact() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "b5d93994-666c-4f46-b58d-be254dd5798c",
+          access_key: "YOUR_ACCESS_KEY_HERE",
           ...formData
         }),
       });
@@ -44,8 +44,8 @@ function Contact() {
   };
 
   return (
-    <div style={{ maxWidth: "500px", margin: "100px auto 0 auto", padding: "20px" }}>
-      <h2>Let’s Connect</h2>
+    <div style={{ maxWidth: "500px", margin: "0 auto", padding: "20px" }}>
+      <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: "15px" }}>
           <label htmlFor="name">Name:</label>
@@ -86,8 +86,8 @@ function Contact() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-primary"
           style={{
+            background: "#007bff",
             color: "white",
             padding: "10px 20px",
             border: "none",
@@ -102,4 +102,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactForm;

@@ -62,7 +62,7 @@ const projects = [
 ]
 function Portfolio() {
     return (
-        <div id='portfolio' className='container' style={{ scrollMarginTop:"-30px", paddingTop: "150px", paddingBottom: "200px" }}>
+        <div id='portfolio' className='container' style={{ scrollMarginTop:"-30px", paddingTop: "150px" }}>
             <h2 style={{ textAlign: 'center', paddingBottom: "50px" }}>My Work</h2>
             <Project projects={projects} />  
             <a className='btn btn-lg btn-outline-primary btn-block mt-5' href='https://github.com/megellman' target='_blank' style={{width:"100%"}} rel="noreferrer" >See more of my work</a> 

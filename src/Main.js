@@ -1,6 +1,7 @@
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import Skills from "./pages/Skills";
+import About from "./sections/About";
+import Portfolio from "./sections/Portfolio";
+import Skills from "./sections/Skills";
+import Connect from "./sections/Connect";
 
 export default function Main(){
     return(
@@ -8,6 +9,7 @@ export default function Main(){
             <About />
             <Skills />
             <Portfolio />
+            <Connect />
         </div>
     )
 }
