@@ -4,11 +4,10 @@ const toolsAndTechnologies = ['Git', 'GitHub', 'AJAX', 'Insomnia / Postman', 'Da
 
 function Skills() {
     return (
-        <div style={{height:"100vh"}}>
             <div className='container border rounded border-white bg-white' style={{ marginTop: "-90px", scrollMarginTop: "150px", zIndex: "2", position: "relative", padding: "20px", boxShadow: "rgba(0,0,0,0.15) 0 5px 15px" }}>
                 <div className='row justify-content-center'>
                     <div className='col-4 text-center'>
-                        <h4>Front-end</h4>
+                        <h3>Front-end</h3>
                         <ul className='list-inline'>
                             {frontEnd.map((item, i) => (
                                 <li key={i}>{item}</li>
@@ -16,7 +15,7 @@ function Skills() {
                         </ul>
                     </div>
                     <div className='col-4 text-center'>
-                        <h4>Back-end</h4>
+                        <h3>Back-end</h3>
                         <ul className='list-inline'>
                             {backEnd.map((item, i) => (
                                 <li key={i}>{item}</li>
@@ -24,7 +23,7 @@ function Skills() {
                         </ul>
                     </div>
                     <div className='col-4 text-center'>
-                        <h4>Tools and Technologies</h4>
+                        <h3>Tools and Technologies</h3>
                         <ul className='list-inline'>
                             {toolsAndTechnologies.map((item, i) => (
                                 <li key={i}>{item}</li>
@@ -33,7 +32,6 @@ function Skills() {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 
