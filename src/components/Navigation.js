@@ -1,63 +1,18 @@
-import React from 'react';
-import { NavLink } from "react-router-dom";
-import '../custom.css'
-
-
-
 function Navigation() {
     return (
         <div >
         <ul className="nav justify-content-end">
             <li>
-                <NavLink 
-                style={({ isActive }) => {
-                    return {
-                        fontWeight: isActive ? "bold" : "",
-                        color: isActive ? "darkorchid" : "black",
-                        textDecorationLine: "none",
-                        marginRight: "10px"
-                    }
-                }}
-                to="/"
-                end>
-                    About Me
-                </NavLink>
+                <a href='#aboutMe' className='nav-link text-dark'>About Me</a>
             </li>
             <li>
-                <NavLink 
-                style={({ isActive }) => {
-                    return {
-                        fontWeight: isActive ? "bold" : "",
-                        color: isActive ? "darkorchid" : "black",
-                        textDecorationLine: "none",
-                        marginRight: "10px"
-                    }
-                }}
-                to="/portfolio">Portfolio</NavLink>
+                <a href='#skills' className='nav-link text-dark'>Skills</a>
             </li>
             <li>
-                <NavLink 
-                style={({ isActive }) => {
-                    return {
-                        fontWeight: isActive ? "bold" : "",
-                        color: isActive ? "darkorchid" : "black",
-                        textDecorationLine: "none",
-                        marginRight: "10px"
-                    }
-                }}
-                to="/contact">Contact</NavLink>
+               <a href='#portfolio' className='nav-link text-dark'>Projects</a>
             </li>
             <li>
-                <NavLink 
-                style={({ isActive }) => {
-                    return {
-                        fontWeight: isActive ? "bold" : "",
-                        color: isActive ? "darkorchid" : "black",
-                        textDecorationLine: "none",
-                        marginRight: "10px"
-                    }
-                }}
-                to="/resume">Resume</NavLink>
+            <a href='#contact' className='nav-link text-dark'>Contact</a>
             </li>
         </ul>    
         </div>

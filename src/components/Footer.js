@@ -4,12 +4,15 @@ import React from 'react';
 function Footer() {
     return (
         <div className='footer fixed-bottom navbar justify-content-center'>
-            <ul className="nav ">
+            <ul className="nav">
                 <li className="nav-item hover-link">
-                    <a className="nav-link  text-secondary" target='_blank' href="https://www.linkedin.com/in/megan-ellman/" >LinkedIn</a>
+                    <a className="nav-link text-dark" target='_blank' href="https://www.linkedin.com/in/megan-ellman/" rel="noreferrer" >LinkedIn</a>
                 </li>
                 <li className="nav-item hover-link">
-                    <a className="nav-link  text-secondary" target='_blank' href="https://github.com/megellman">GitHub</a>
+                    <a className="nav-link text-dark" target='_blank' href="https://github.com/megellman" rel="noreferrer">GitHub</a>
+                </li>
+                <li className="nav-item hover-link">
+                    <a className="nav-link text-dark" href={require('../assets/resume.pdf')} download='MeganEllman' >Resume</a>
                 </li>
             </ul>
         </div>

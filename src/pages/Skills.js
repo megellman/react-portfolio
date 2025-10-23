@@ -1,13 +1,10 @@
-import React from 'react';
-
 const frontEnd = ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Responsive Design', 'React', 'Bootstrap'];
 const backEnd = ['APIs', 'Node', 'Express', 'MySQL', 'Sequelize', 'MongoDB', 'Mongoose', 'REST', 'GraphQL'];
-
 const toolsAndTechnologies = ['Git', 'GitHub', 'AJAX', 'Insomnia / Postman', 'Day.js', 'Unit Testing with Jest', 'Problem Solving', 'Pseudocode', 'REST API Design'];
 
-function Resume() {
+function Skills() {
     return (
-        <div className='container border rounded border-white bg-white' style={{marginTop:"-90px", zIndex:"2", position:"relative", padding:"20px", boxShadow:"rgba(0,0,0,0.15) 0 5px 15px"}}>
+        <div id='skills' className='container border rounded border-white bg-white' style={{marginTop:"-90px", scrollMarginTop:"100px", zIndex:"2", position:"relative", padding:"20px", boxShadow:"rgba(0,0,0,0.15) 0 5px 15px"}}>
             <a href={require('../assets/resume.pdf')} download='MeganEllman'
                 style={{ color: "black", textDecoration: "none" }}>
             <div className='row justify-content-center'>
@@ -41,4 +38,4 @@ function Resume() {
     )
 }
 
-export default Resume;
+export default Skills;
