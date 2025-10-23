@@ -4,7 +4,7 @@ const toolsAndTechnologies = ['Git', 'GitHub', 'AJAX', 'Insomnia / Postman', 'Da
 
 function Skills() {
     return (
-        <div id='skills' className='container border rounded border-white bg-white' style={{marginTop:"-90px", scrollMarginTop:"100px", zIndex:"2", position:"relative", padding:"20px", boxShadow:"rgba(0,0,0,0.15) 0 5px 15px"}}>
+        <div id='skills' className='container border rounded border-white bg-white' style={{marginTop:"-90px", scrollMarginTop:"150px", zIndex:"2", position:"relative", padding:"20px", boxShadow:"rgba(0,0,0,0.15) 0 5px 15px"}}>
             <a href={require('../assets/resume.pdf')} download='MeganEllman'
                 style={{ color: "black", textDecoration: "none" }}>
             <div className='row justify-content-center'>
