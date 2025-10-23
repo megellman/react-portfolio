@@ -44,6 +44,7 @@ function ContactForm() {
   };
 
   return (
+    <div className="bg-white">
     <div style={{ maxWidth: "500px", margin: "0 auto", padding: "20px" }}>
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
@@ -98,6 +99,7 @@ function ContactForm() {
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
       </form>
+    </div>
     </div>
   );
 }

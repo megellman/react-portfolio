@@ -44,60 +44,62 @@ function Contact() {
   };
 
   return (
-    <div style={{ maxWidth: "500px", margin: "100px auto", padding: "20px" }}>
-      <h2>Let’s Connect</h2>
-      <form onSubmit={handleSubmit}>
-        <div style={{ marginBottom: "15px" }}>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-          />
-        </div>
+    <div className="bg-white" style={{ maxWidth: "500px", margin: "100px auto", padding: "20px", borderRadius: "5px" }}>
+      <div >
+        <h2>Let’s Connect</h2>
+        <form onSubmit={handleSubmit}>
+          <div style={{ marginBottom: "15px" }}>
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              style={{ width: "100%", padding: "8px", marginTop: "5px" }}
+            />
+          </div>
 
-        <div style={{ marginBottom: "15px" }}>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-          />
-        </div>
+          <div style={{ marginBottom: "15px" }}>
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              style={{ width: "100%", padding: "8px", marginTop: "5px" }}
+            />
+          </div>
 
-        <div style={{ marginBottom: "15px" }}>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            rows="5"
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-          />
-        </div>
+          <div style={{ marginBottom: "15px" }}>
+            <label htmlFor="message">Message:</label>
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              rows="5"
+              style={{ width: "100%", padding: "8px", marginTop: "5px" }}
+            />
+          </div>
 
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="bg-primary"
-          style={{
-            color: "white",
-            padding: "10px 20px",
-            border: "none",
-            borderRadius: "4px",
-            cursor: isSubmitting ? "not-allowed" : "pointer"
-          }}
-        >
-          {isSubmitting ? "Sending..." : "Send Message"}
-        </button>
-      </form>
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="bg-primary"
+            style={{
+              color: "white",
+              padding: "10px 20px",
+              border: "none",
+              borderRadius: "4px",
+              cursor: isSubmitting ? "not-allowed" : "pointer"
+            }}
+          >
+            {isSubmitting ? "Sending..." : "Send Message"}
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
