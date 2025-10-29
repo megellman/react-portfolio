@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.bea0f89c.css",
+    "main.css": "/react-portfolio/static/css/main.b5b5876a.css",
     "main.js": "/react-portfolio/static/js/main.c2a6768e.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/code-quiz.png": "/react-portfolio/static/media/code-quiz.7aaa88510502ccb3a2d4.png",
@@ -11,12 +11,12 @@
     "static/media/resume.pdf": "/react-portfolio/static/media/resume.9aa3319ed85dc4f0a97f.pdf",
     "static/media/nibble-nabble.png": "/react-portfolio/static/media/nibble-nabble.aa8e273251f106b0a952.png",
     "index.html": "/react-portfolio/index.html",
-    "main.bea0f89c.css.map": "/react-portfolio/static/css/main.bea0f89c.css.map",
+    "main.b5b5876a.css.map": "/react-portfolio/static/css/main.b5b5876a.css.map",
     "main.c2a6768e.js.map": "/react-portfolio/static/js/main.c2a6768e.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bea0f89c.css",
+    "static/css/main.b5b5876a.css",
     "static/js/main.c2a6768e.js"
   ]
 }
