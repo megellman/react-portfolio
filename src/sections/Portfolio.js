@@ -51,7 +51,7 @@ const projects = [
     {
         id: 6,
         name: 'Task Manager',
-        description: 'Full stack web app built with Node.js, Express, jQuery, and Bootstrap that lets users create, edit, delete, and track tasks with priority-based color coding and persistent JSON storage',
+        description: 'Full stack task tracker built with Node/Express, jQuery, and Bootstrap, featuring CRUD operations, priority color-coding, and persistent JSON storage',
         deployedLink: 'https://task-mananger-7vkh.onrender.com/',
         repoLink: 'https://github.com/megellman/task-mananger',
         image: require('../assets/task-manager.png'),

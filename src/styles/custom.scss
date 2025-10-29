@@ -25,51 +25,15 @@ $h6-font-size: 1.8rem;
   text-decoration: none;
 }
 
-ul, p {
+.list-inline > li {
+  font-size: 1.2rem;
+}  
+
+p {
   font-size: 1.2rem;
 }
 
-// html,
-// body {
-//   height: 100%;
-//   margin: 0;
-//   background-color: #F5F6FA;
-// }
-
-// .contact{
-//   border: 1px solid whitesmoke;
-//   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-// }
-
-// .contact:hover{
-//   border: 1px solid whitesmoke;
-//   background-color: rgb(141, 156, 211);
-// }
-
-// .btn-outline{
-//   border: 1px solid rgba(130, 146, 206, 0.469);
-//   box-shadow: rgba(130, 146, 206, 0.411) 0px 2px 8px 0px;
-// }
 
 .card-box{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-// html, body, #root {
-//   height: 100%;
-// }
-
-// body {
-//   display: flex;
-//   flex-direction: column;
-//   margin: 0;
-// }
-
-// #root > div {
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100vh;
-// }
-
-// main {
-//   flex: 1;
-// }
