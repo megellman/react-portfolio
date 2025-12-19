@@ -22,7 +22,7 @@ const projects = [
     {
         id: 3,
         name: 'Nibble Nabble',
-        description: "Full stack web app built with JavaScript, jQuery, Tailwind CSS, and REST APIs (TheCocktailDB, Spoonacular, Edamam) that lets users search, plan, and save custom dinner party menus with paired cocktails and wines",
+        description: "Full-stack web app using JavaScript, jQuery, Tailwind, and REST APIs to plan and save menus with drink pairings",
         deployedLink: 'https://megellman.github.io/group-project/',
         repoLink: 'https://github.com/megellman/group-project',
         image: require('../assets/nibble-nabble.png'),
