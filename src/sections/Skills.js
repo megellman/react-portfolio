@@ -48,12 +48,12 @@ function Skills() {
         position: 'relative',
         padding: '20px',
         boxShadow: 'rgba(0,0,0,0.15) 0 5px 15px',
-        fontSize: '1.3rem',
+        fontSize: '1.2rem',
       }}
     >
       <div className="row justify-content-center">
         <div className="col-3 text-center">
-          <h3>Web & Applications</h3>
+          <h6>Web & Applications</h6>
           <ul className="list-unstyled">
             {webAndAppFundamentals.map((item, i) => (
               <li key={i}>{item}</li>
@@ -62,7 +62,7 @@ function Skills() {
         </div>
 
         <div className="col-3 text-center">
-          <h3>APIs & Backend</h3>
+          <h6>APIs & Backend</h6>
           <ul className="list-unstyled">
             {apisAndBackend.map((item, i) => (
               <li key={i}>{item}</li>
@@ -71,7 +71,7 @@ function Skills() {
         </div>
 
         <div className="col-3 text-center">
-          <h3>Databases</h3>
+          <h6>Databases</h6>
           <ul className="list-unstyled">
             {databases.map((item, i) => (
               <li key={i}>{item}</li>
@@ -80,7 +80,7 @@ function Skills() {
         </div>
 
         <div className="col-3 text-center">
-          <h3>Debugging & Analysis</h3>
+          <h6>Debugging & Analysis</h6>
           <ul className="list-unstyled">
             {debuggingAndAnalysis.map((item, i) => (
               <li key={i}>{item}</li>
