@@ -53,11 +53,12 @@ function Skills() {
         position: 'relative',
         padding: '20px',
         boxShadow: 'rgba(0,0,0,0.15) 0 5px 15px',
+        fontSize: '1rem'
       }}
     >
       <div className="row justify-content-center">
-        <div className="col-4 text-center">
-          <h3>Web & Applications</h3>
+        <div className="col-2 text-center">
+          <h5>Web & Applications</h5>
           <ul className="list-unstyled">
             {webAndAppFundamentals.map((item, i) => (
               <li key={i}>{item}</li>
@@ -65,8 +66,8 @@ function Skills() {
           </ul>
         </div>
 
-        <div className="col-4 text-center">
-          <h3>APIs & Backend</h3>
+        <div className="col-2 text-center">
+          <h5>APIs & Backend</h5>
           <ul className="list-unstyled">
             {apisAndBackend.map((item, i) => (
               <li key={i}>{item}</li>
@@ -74,19 +75,16 @@ function Skills() {
           </ul>
         </div>
 
-        <div className="col-4 text-center">
-          <h3>Databases</h3>
+        <div className="col-2 text-center">
+          <h5>Databases</h5>
           <ul className="list-unstyled">
             {databases.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>
         </div>
-      </div>
-
-      <div className="row justify-content-center mt-4">
-        <div className="col-6 text-center">
-          <h3>Debugging & Tooling</h3>
+        <div className="col-2 text-center">
+          <h5>Debugging & Tooling</h5>
           <ul className="list-unstyled">
             {debuggingAndTooling.map((item, i) => (
               <li key={i}>{item}</li>
@@ -94,14 +92,14 @@ function Skills() {
           </ul>
         </div>
 
-        <div className="col-6 text-center">
-          <h3>Problem Solving</h3>
+        <div className="col-2 text-center">
+          <h5>Problem Solving</h5>
           <ul className="list-unstyled">
             {problemSolving.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>
-        </div>
+      </div>
       </div>
     </div>
   );
