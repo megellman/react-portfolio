@@ -4,7 +4,7 @@ const webAndAppFundamentals = [
   'JavaScript (ES6+)',
   'React',
   'Responsive UI Design',
-  'Client-side Error Handling'
+  'Client-side Error Handling',
 ];
 
 const apisAndBackend = [
@@ -14,7 +14,7 @@ const apisAndBackend = [
   'Express',
   'Async Workflows',
   'Data Validation',
-  'Error Handling'
+  'Error Handling',
 ];
 
 const databases = [
@@ -23,23 +23,18 @@ const databases = [
   'MongoDB',
   'Mongoose',
   'Relational Data Concepts',
-  'Document-based Data Concepts'
+  'Document-based Data Concepts',
 ];
 
-const debuggingAndTooling = [
+const debuggingAndAnalysis = [
   'Git',
   'GitHub',
   'Postman / Insomnia',
   'Browser Developer Tools',
-  'Unit Testing with Jest'
-];
-
-const problemSolving = [
+  'Unit Testing with Jest',
   'Issue Reproduction',
   'Root Cause Analysis',
-  'Pseudocode',
-  'Logical Decomposition',
-  'API Behavior Analysis'
+  'API Behavior Analysis',
 ];
 
 function Skills() {
@@ -57,7 +52,7 @@ function Skills() {
       }}
     >
       <div className="row justify-content-center">
-        <div className="col-2 text-center">
+        <div className="col-3 text-center">
           <h3>Web & Applications</h3>
           <ul className="list-unstyled">
             {webAndAppFundamentals.map((item, i) => (
@@ -66,7 +61,7 @@ function Skills() {
           </ul>
         </div>
 
-        <div className="col-2 text-center">
+        <div className="col-3 text-center">
           <h3>APIs & Backend</h3>
           <ul className="list-unstyled">
             {apisAndBackend.map((item, i) => (
@@ -75,7 +70,7 @@ function Skills() {
           </ul>
         </div>
 
-        <div className="col-2 text-center">
+        <div className="col-3 text-center">
           <h3>Databases</h3>
           <ul className="list-unstyled">
             {databases.map((item, i) => (
@@ -83,23 +78,15 @@ function Skills() {
             ))}
           </ul>
         </div>
-        <div className="col-2 text-center">
-          <h3>Debugging & Tooling</h3>
+
+        <div className="col-3 text-center">
+          <h3>Debugging & Analysis</h3>
           <ul className="list-unstyled">
-            {debuggingAndTooling.map((item, i) => (
+            {debuggingAndAnalysis.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>
         </div>
-
-        <div className="col-2 text-center">
-          <h3>Problem Solving</h3>
-          <ul className="list-unstyled">
-            {problemSolving.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-      </div>
       </div>
     </div>
   );
