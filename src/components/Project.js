@@ -6,7 +6,7 @@ function ProjectCard({ item }) {
 
     return (
         <NavLink className={"card-box hover-link project-link"} to={item.deployedLink ? item.deployedLink : item.repoLink} target='_blank'>
-            <div ref={ref} className="card  border-0" style={{ width: '300px', height: '200px', overflow: "hidden", color: "white" }}>
+            <div ref={ref} className="card  border-0" style={{ width: '400px', height: '200px', overflow: "hidden", color: "white" }}>
                 {hovering ? (
                     <div className="card-body d-flex justify-content-center align-items-center" style={{backgroundColor: item.color}}>
                         <p className="card-text">{item.description}</p>
