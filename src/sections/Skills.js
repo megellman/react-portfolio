@@ -47,7 +47,7 @@ function Skills() {
         scrollMarginTop: '160px',
         zIndex: '2',
         position: 'relative',
-        padding: '20px',
+        padding: '30px',
         boxShadow: 'rgba(0,0,0,0.15) 0 5px 15px',
         fontSize: '1.2rem',
       }}
