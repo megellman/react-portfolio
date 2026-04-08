@@ -1,40 +1,41 @@
-const webAndAppFundamentals = [
-  'HTML',
-  'CSS',
-  'JavaScript (ES6+)',
-  'React',
-  'Responsive UI Design',
-  'Client-side Error Handling',
-];
-
-const apisAndBackend = [
+const integrationAndAPIs = [
   'REST APIs',
-  'GraphQL',
-  'Node.js',
-  'Express',
-  'Async Workflows',
-  'Data Validation',
-  'Error Handling',
+  'JSON',
+  'API Validation',
+  'Authentication Debugging',
+  'Endpoint Testing',
+  'Error Analysis',
+  'Postman',
 ];
 
-const databases = [
-  'MySQL',
-  'Sequelize',
-  'MongoDB',
-  'Mongoose',
-  'Relational Data Concepts',
-  'Document-based Data Concepts',
+const supportAndOperations = [
+  'Front',
+  'Intercom',
+  'Jira',
+  'Asana',
+  'Monday',
+  'ClickUp',
+  'Notion',
+  'Workflow Automation',
+  'SLA Environments',
+  'Ticket Management',
 ];
 
-const debuggingAndAnalysis = [
-  'Git',
-  'GitHub',
-  'Postman / Insomnia',
-  'Browser Developer Tools',
-  'Unit Testing with Jest',
-  'Issue Reproduction',
+const documentationAndProcess = [
+  'Process Documentation',
+  'FAQ Libraries',
+  'Escalation Write-ups',
+  'Cross-functional Process Guides',
   'Root Cause Analysis',
-  'API Behavior Analysis',
+];
+
+const technicalFoundation = [
+  'JavaScript (ES6+)',
+  'HTML / CSS',
+  'Browser DevTools',
+  'Log Analysis',
+  'Web Debugging',
+  'Issue Reproduction',
 ];
 
 function Skills() {
@@ -53,36 +54,36 @@ function Skills() {
     >
       <div className="row justify-content-center">
         <div className="col-3 text-center">
-          <h6>Web & Applications</h6>
+          <h6>Integration & APIs</h6>
           <ul className="list-unstyled">
-            {webAndAppFundamentals.map((item, i) => (
+            {integrationAndAPIs.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>
         </div>
 
         <div className="col-3 text-center">
-          <h6>APIs & Backend</h6>
+          <h6>Support & Operations</h6>
           <ul className="list-unstyled">
-            {apisAndBackend.map((item, i) => (
+            {supportAndOperations.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>
         </div>
 
         <div className="col-3 text-center">
-          <h6>Databases</h6>
+          <h6>Documentation & Process</h6>
           <ul className="list-unstyled">
-            {databases.map((item, i) => (
+            {documentationAndProcess.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>
         </div>
 
         <div className="col-3 text-center">
-          <h6>Debugging & Analysis</h6>
+          <h6>Technical Foundation</h6>
           <ul className="list-unstyled">
-            {debuggingAndAnalysis.map((item, i) => (
+            {technicalFoundation.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>
