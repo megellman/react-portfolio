@@ -5,7 +5,7 @@ export default function Connect() {
         <div className="d-flex justify-content-around align-items-center" style={{ height:"100vh" }}>
             <div>
                 <h1 style={{fontSize:"6rem"}}>Let’s Talk</h1>
-                <p className="lead" >Open to technical support, production-focused roles, and collaborative problem-solving challenges.</p>
+                <p className="lead" >Open to implementation, customer success, and operations roles where technical fluency drives customer outcomes.</p>
             </div>
             <Link to="/Contact" className="btn btn-outline-dark btn-round btn-lg">
                Say Hi
