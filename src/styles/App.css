@@ -137,11 +137,23 @@ textarea {
   margin-top: 40px;
 }
 
-/* GRID (add if not already defined) */
+/* GRID */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
+}
+ /* Mobile */
+@media (max-width: 767px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* CARD BASE */
