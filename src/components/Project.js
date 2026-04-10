@@ -7,6 +7,7 @@ function ProjectCard({ item }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [flipped, setFlipped] = useState(false);
 
+  // detect screen size
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -15,25 +16,30 @@ function ProjectCard({ item }) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleFlip = () => {
+  // explicit (not toggle) flip logic
+  const handleFrontClick = () => {
     if (isMobile) {
-      setFlipped(!flipped);
+      setFlipped(true);
+    }
+  };
+
+  const handleBackClick = () => {
+    if (isMobile) {
+      setFlipped(false);
     }
   };
 
   const link = item.deployedLink || item.repoLink;
 
   return (
-    <div
-      ref={ref}
-      className={`project-card-wrapper ${flipped ? "flipped" : ""}`}
-      onClick={handleFlip}
-    >
+    <div className={`project-card-wrapper ${flipped ? "flipped" : ""}`}>
       <div className="project-card-inner">
-        
+
         {/* FRONT */}
         <div
+          ref={ref}
           className="project-card project-card-front card border-0 d-flex justify-content-center align-items-center text-center"
+          onClick={handleFrontClick}
           style={{
             backgroundColor:
               !isMobile && hovering
@@ -52,6 +58,7 @@ function ProjectCard({ item }) {
         {isMobile && (
           <div
             className="project-card project-card-back card border-0 d-flex flex-column justify-content-center align-items-center text-center"
+            onClick={handleBackClick}
             style={{ backgroundColor: item.color }}
           >
             <p className="project-description">{item.description}</p>

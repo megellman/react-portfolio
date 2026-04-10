@@ -359,6 +359,22 @@ textarea {
   }
 }
 
+.project-card-front {
+  z-index: 2;
+}
+
+.project-card-back {
+  z-index: 1;
+}
+
+.project-card-wrapper.flipped .project-card-front {
+  pointer-events: none;
+}
+
+.project-card-wrapper.flipped .project-card-back {
+  pointer-events: auto;
+}
+
 /* ================= SKILLS ================= */
 .skills-section {
   position: relative;
