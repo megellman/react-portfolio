@@ -1,15 +1,22 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import "../styles/App.css";
 
 export default function Connect() {
-    return (
-        <div className="d-flex justify-content-around align-items-center" style={{ height:"100vh" }}>
-            <div>
-                <h1 style={{fontSize:"6rem"}}>Let’s Talk</h1>
-                <p className="lead" >Open to implementation, customer success, and operations roles where technical fluency drives customer outcomes.</p>
-            </div>
-            <Link to="/Contact" className="btn btn-outline-dark btn-round btn-lg">
-               Say Hi
-            </Link>
-        </div>
-    )
+  return (
+    <section className="connect-section d-flex flex-column flex-md-row justify-content-center align-items-center text-center text-md-start">
+      
+      <div className="connect-text">
+        <h1 className="connect-title">Let’s Talk</h1>
+        <p className="lead">
+          Open to implementation, customer success, and operations roles where
+          technical fluency drives customer outcomes.
+        </p>
+      </div>
+
+      <Link to="/Contact" className="btn btn-outline-dark btn-lg connect-btn">
+        Say Hi
+      </Link>
+
+    </section>
+  );
 }

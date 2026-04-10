@@ -1,14 +1,14 @@
-
 import { Link } from "react-router-dom";
+import "../styles/App.css";
 
 function Header() {
-    return (
-        <div className='bg-primary fixed-top d-flex align-items-center justify-content-between' style={{boxShadow:" rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px"}}>
-            <Link to="/" className='text-light text-decoration-none' >
-                <h1 className='display-1 my-0 text-center p-2' style={{fontSize: "5rem"}}>Megan Ellman</h1>
-            </Link>
-        </div>
-    );
+  return (
+    <header className="header bg-primary fixed-top d-flex align-items-center justify-content-between">
+      <Link to="/" className="text-light text-decoration-none w-100 text-center text-md-start">
+        <h1 className="header-title my-0">Megan Ellman</h1>
+      </Link>
+    </header>
+  );
 }
 
 export default Header;

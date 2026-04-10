@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/App.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -17,7 +18,7 @@ function Contact() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "b5d93994-666c-4f46-b58d-be254dd5798c",
+          access_key: "YOUR_KEY",
           ...formData
         }),
       });
@@ -26,11 +27,7 @@ function Contact() {
       if (result.success) {
         alert("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
-      } else {
-        alert("Failed to send message. Please try again.");
       }
-    } catch (error) {
-      alert("An error occurred. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -44,61 +41,30 @@ function Contact() {
   };
 
   return (
-      <div className="bg-white" style={{ maxWidth: "500px", margin: "100px auto", padding: "20px", borderRadius: "5px" }}>
-        <h2>Let’s Connect</h2>
-        <form onSubmit={handleSubmit}>
-          <div style={{ marginBottom: "15px" }}>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-            />
-          </div>
+    <div className="contact-container">
+      <h2>Let’s Connect</h2>
 
-          <div style={{ marginBottom: "15px" }}>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-            />
-          </div>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label>Name:</label>
+          <input name="name" value={formData.name} onChange={handleChange} required />
+        </div>
 
-          <div style={{ marginBottom: "15px" }}>
-            <label htmlFor="message">Message:</label>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              rows="5"
-              style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-            />
-          </div>
+        <div className="form-group">
+          <label>Email:</label>
+          <input name="email" type="email" value={formData.email} onChange={handleChange} required />
+        </div>
 
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="bg-primary"
-            style={{
-              color: "white",
-              padding: "10px 20px",
-              border: "none",
-              borderRadius: "4px",
-              cursor: isSubmitting ? "not-allowed" : "pointer"
-            }}
-          >
-            {isSubmitting ? "Sending..." : "Send Message"}
-          </button>
-        </form>
-      </div>
+        <div className="form-group">
+          <label>Message:</label>
+          <textarea name="message" rows="5" value={formData.message} onChange={handleChange} required />
+        </div>
+
+        <button type="submit" disabled={isSubmitting} className="submit-btn">
+          {isSubmitting ? "Sending..." : "Send Message"}
+        </button>
+      </form>
+    </div>
   );
 }
 
