@@ -26,16 +26,6 @@ function Footer() {
             GitHub
           </a>
         </li>
-
-        <li className="nav-item">
-          <a
-            className="nav-link text-white footer-link"
-            href={resume}
-            download="MeganEllman"
-          >
-            Resume
-          </a>
-        </li>
       </ul>
     </footer>
   );

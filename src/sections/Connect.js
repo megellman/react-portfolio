@@ -8,7 +8,7 @@ export default function Connect() {
       <div className="connect-text">
         <h1 className="connect-title">Let’s Talk</h1>
         <p className="lead">
-          Open to implementation, customer success, and operations roles where
+          Open to roles where
           technical fluency drives customer outcomes.
         </p>
       </div>
